@@ -4,28 +4,28 @@ Resets
 
 /* CSS Mini Reset */
 
-html, body, div, form, fieldset, legend, label
-{
- margin: 0;
- padding: 0;
+html, body, div, form, fieldset, legend, label {
+	margin: 0;
+	padding: 0;
 }
 
-table
-{
- border-collapse: collapse;
- border-spacing: 0;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-th, td
-{
- text-align: left;
- vertical-align: top;
+th, td {
+	text-align: left;
+	vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
+h1, h2, h3, h4, h5, h6, th, td, caption {
+	font-weight: normal;
+}
 
-img { border: 0; }
-
+img {
+	border: 0;
+}
 
 /*******************************************
 Common Classes
@@ -33,51 +33,124 @@ Common Classes
 
 /*Typography */
 
-.align-left {text-align: left;}
-.align-center {text-align: center;}
-.align-right {text-align: right;}
+.align-left {
+	text-align: left;
+}
 
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
 
 /* Spacing */
 
-.m-b-xs {margin-bottom: 25px;}
-.m-b-sm {margin-bottom: 50px;}
-.m-b-md {margin-bottom: 75px;}
-.m-b-lg {margin-bottom: 100px;}
+.m-b-xs {
+	margin-bottom: 25px;
+}
 
-.m-t-xs {margin-top: 25px;}
-.m-t-sm {margin-top: 50px;}
-.m-t-md {margin-top: 75px;}
-.m-t-lg {margin-top: 100px;}
+.m-b-sm {
+	margin-bottom: 50px;
+}
 
-.m-t-0 {margin-top: 0;}
-.m-b-0 {margin-bottom: 0;}
-.m-0 {margin-top: 0; margin-bottom: 0;}
+.m-b-md {
+	margin-bottom: 75px;
+}
 
-.m-center {margin: 0 auto;}
+.m-b-lg {
+	margin-bottom: 100px;
+}
 
-.p-b-xs {padding-bottom: 25px;}
-.p-b-sm {padding-bottom: 50px;}
-.p-b-md {padding-bottom: 75px;}
-.p-b-lg {padding-bottom: 100px;}
+.m-t-xs {
+	margin-top: 25px;
+}
 
-.p-t-xs {padding-top: 25px;}
-.p-t-sm {padding-top: 50px;}
-.p-t-md {padding-top: 75px;}
-.p-t-lg {padding-top: 100px;}
+.m-t-sm {
+	margin-top: 50px;
+}
 
-.p-t-0 {padding-top: 0;}
-.p-b-0 {padding-bottom: 0;}
-.p-0 {padding-top: 0; padding-bottom: 0;}
+.m-t-md {
+	margin-top: 75px;
+}
 
+.m-t-lg {
+	margin-top: 100px;
+}
+
+.m-t-0 {
+	margin-top: 0;
+}
+
+.m-b-0 {
+	margin-bottom: 0;
+}
+
+.m-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.m-center {
+	margin: 0 auto;
+}
+
+.p-b-xs {
+	padding-bottom: 25px;
+}
+
+.p-b-sm {
+	padding-bottom: 50px;
+}
+
+.p-b-md {
+	padding-bottom: 75px;
+}
+
+.p-b-lg {
+	padding-bottom: 100px;
+}
+
+.p-t-xs {
+	padding-top: 25px;
+}
+
+.p-t-sm {
+	padding-top: 50px;
+}
+
+.p-t-md {
+	padding-top: 75px;
+}
+
+.p-t-lg {
+	padding-top: 100px;
+}
+
+.p-t-0 {
+	padding-top: 0;
+}
+
+.p-b-0 {
+	padding-bottom: 0;
+}
+
+.p-0 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
 
 /*******************************************
 Global Styles
 *******************************************/
 
-body {background-color: #fff;}
+body {
+	background-color: #fff;
+}
 
 /* Typography */
+
 h1, h2, h3 {
 	font-family: "Times New Roman", Times, serif;
 }
@@ -97,6 +170,10 @@ h1 {
 	letter-spacing: .5px;
 }
 
+h2 {}
+
+h3 {}
+
 h4 {
 	font-size: .95em;
 	font-weight: bold;
@@ -105,22 +182,28 @@ h4 {
 }
 
 p {
-  line-height: 2em;
+  color: #727582;
+	line-height: 2em;
 }
 
 p, a, ul, li {
 	font-size: .95em;
 }
 
-a {
-  color: #1169fc;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  transition: all .25s;
+a, ul, li {
+	line-height: 1.5em;
 }
 
+a {
+	color: #1169fc;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	/* transition: all .25s; */
+}
+
+/*
 a:before {
   background: #1169fc;
   content: ' ';
@@ -134,15 +217,18 @@ a:before {
   transform: translateY(-50%);
   width: 0;
 }
+*/
 
 a:hover {
-  color: #1169fc;
-  padding-left: 20px;
+	color: #4D00FF;
+	/* padding-left: 20px; */
 }
 
+/*
 a:hover:before {
   width: 10px;
 }
+*/
 
 ul {
 	list-style: none;
@@ -150,17 +236,23 @@ ul {
 	padding-left: 0;
 }
 
+sup {
+  font-size: .5em;
+  position: relative;
+  left: 1px;
+}
+
 /* Navigation */
+
 .nav-bar {
-  border: none;
+	border: none;
 	/* border-bottom: 1px solid #C6CCD4; */
 	height: 40px;
 	width: 90%;
 	margin: 0 auto;
 }
 
-.nav-inner {
-}
+.nav-inner {}
 
 .nav-links li {
 	display: inline-block;
@@ -172,7 +264,6 @@ ul {
 .nav-links a {
 	font-weight: normal;
 }
-
 
 /*******************************************
 Page Style
@@ -188,7 +279,7 @@ Page Style
 
 .wrapper-content {
 	margin: 50px auto;
-	max-width: 800px;
+	max-width: 700px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
