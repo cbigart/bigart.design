@@ -170,9 +170,17 @@ h1 {
 	letter-spacing: .5px;
 }
 
-h2 {}
+h2 {
+  font-size: 1.75em;
+  line-height: 2em;
+  letter-spacing: .5px;
+}
 
-h3 {}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  letter-spacing: .5px;
+}
 
 h4 {
 	font-size: .95em;
@@ -277,11 +285,19 @@ Page Style
 	padding-top: 10px;
 }
 
-.wrapper-content {
-	margin: 50px auto;
-	max-width: 700px;
+.wrapper-hp,
+.wrapper-sp {
+  margin: 50px auto 100px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.wrapper-hp {
+	max-width: 750px;
+}
+
+.wrapper-sp {
+	max-width: 650px;
 }
 
 .divider--small {
@@ -294,4 +310,9 @@ Page Style
 
 .description {
 	color: #858999;
+}
+
+.social li {
+  display: inline-block;
+  padding-right: 10px;
 }
