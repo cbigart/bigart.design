@@ -31,20 +31,6 @@ img {
 Common Classes
 *******************************************/
 
-/*Typography */
-
-.align-left {
-	text-align: left;
-}
-
-.align-center {
-	text-align: center;
-}
-
-.align-right {
-	text-align: right;
-}
-
 /* Spacing */
 
 .m-b-xs {
@@ -189,10 +175,9 @@ h4 {
 	text-transform: uppercase;
 }
 
-p {
-  color: #727582;
-	line-height: 2em;
-}
+p {line-height: 2em;}
+
+p, ul {color: #727582;}
 
 p, a, ul, li {
 	font-size: .95em;
@@ -208,35 +193,11 @@ a {
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
-	/* transition: all .25s; */
 }
-
-/*
-a:before {
-  background: #1169fc;
-  content: ' ';
-  display: inline-block;
-  height: 2px;
-  left: 0;
-  position: absolute;
-  top: 50%;
-  transition: all .23s;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 0;
-}
-*/
 
 a:hover {
 	color: #4D00FF;
-	/* padding-left: 20px; */
 }
-
-/*
-a:hover:before {
-  width: 10px;
-}
-*/
 
 ul {
 	list-style: none;
@@ -250,23 +211,39 @@ sup {
   left: 1px;
 }
 
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+ul li {padding-bottom: 10px;}
+
+ul.list-nb {
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
 /* Navigation */
 
 .nav-bar {
 	border: none;
-	/* border-bottom: 1px solid #C6CCD4; */
 	height: 40px;
 	width: 90%;
 	margin: 0 auto;
 }
 
-.nav-inner {}
-
 .nav-links li {
 	display: inline-block;
 	text-transform: uppercase;
 	float: right;
-	/* padding: 0 20px; */
 }
 
 .nav-links a {
@@ -315,4 +292,19 @@ Page Style
 .social li {
   display: inline-block;
   padding-right: 10px;
+}
+
+/*******************************************
+Homepage
+*******************************************/
+
+/*******************************************
+Subpages
+*******************************************/
+
+/* About */
+
+.headshot {
+	height: auto;
+	width: 574px;
 }
