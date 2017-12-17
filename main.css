@@ -250,6 +250,13 @@ ul.list-nb {
 	font-weight: normal;
 }
 
+/* Images */
+
+.img-fluid {
+	width: 100%;
+	height: auto;
+}
+
 /*******************************************
 Page Style
 *******************************************/
@@ -304,7 +311,10 @@ Subpages
 
 /* About */
 
+/*
 .headshot {
 	height: auto;
-	width: 574px;
+	max-width: 574px;
+	margin-right: 20px;
 }
+*/
