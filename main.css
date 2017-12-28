@@ -205,7 +205,12 @@ a:hover {
 }
 
 ul {
-	list-style: none;
+	margin-left: 0;
+	padding-left: 20px;
+}
+
+ul.projects {
+  list-style: none;
 	margin-left: 0;
 	padding-left: 0;
 }
