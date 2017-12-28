@@ -177,7 +177,12 @@ h4 {
 
 p {line-height: 2em;}
 
-p, ul {color: #727582;}
+.caption {
+	font-size: .75em;
+	font-style: italic;
+}
+
+p, ul, .caption {color: #727582;}
 
 p, a, ul, li {
 	font-size: .95em;
