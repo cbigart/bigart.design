@@ -286,8 +286,8 @@ Page Style
 
 .divider--small {
 	background-color: #C6CCD4;
-	height: 1px;
-	width: 60px;
+	height: 2px;
+	width: 50px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
