@@ -306,6 +306,11 @@ Page Style
 	color: #858999;
 }
 
+ul.social {
+	margin-left: 0;
+	padding-left: 0;
+}
+
 .social li {
   display: inline-block;
   padding-right: 10px;
